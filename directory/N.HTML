@@ -1,0 +1,267 @@
+<html>
+<head>
+<title>ברוך שוורץ</title>
+<style>
+    td, th{
+        border: 1px solid #000;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+<h1>ברוך שוורץ</h1>
+<h2>לומד תיכנות</h2>
+
+
+
+<div style="display: none">
+    <h2>טופס</h2>
+    <form action="form.html" method="GET">
+        <label>
+            שם פרטי
+            <input type="text" placeholder="השם שלך" required/>
+        </label>
+        <br>    
+        <label>
+            מספר
+            <input type="number" id="___number" name="number"/>
+        </label>
+       
+        <br>
+        <label for="___email">אימייל</label>
+        <input type="email" id="___email" name="email"/>
+        <br>
+        <label for="pass">סיסמא</label>
+        <input type="password" id="pass" name="password"/>
+        <br>
+
+        <label for="date">סיסמא</label>
+        <input type="date" id="date" name="date"/>
+        <br>
+
+        <!-- checkbox -->
+        <h3>שפות תיכנות</h3>
+        <label>
+            PHP
+            <input type="checkbox" id="developers-php" name="developers" value="php" required/>
+        </label>
+        <label>
+            JavaScript
+            <input type="checkbox" id="developers-js" name="developers" value="js"/>
+        </label>
+        <label>
+            Payton
+            <input type="checkbox" checked id="developers-py" name="developers" value="py"/>
+        </label>
+        <label>
+            SQL
+            <input type="checkbox" checked id="developers-sql" name="developers" value="sql"/>
+        </label>
+        <br>
+
+        <h3>CSS Framworks</h3>
+        <label>
+            Bootstrap
+            <input checked type="checkbox" id="styles-bot" name="styles" value="bot"/>
+        </label>
+        <label>
+            Tailwindcss
+            <input type="checkbox" id="styles-tailwind" name="styles" value="tailwind"/>
+        </label>
+        <br>
+
+        <!-- radio -->
+        <input type="radio" id="radio1" name="radio" value="radio1" checked/>
+        <input type="radio" checked id="radio2" name="radio" value="radio2"/>
+        <input type="radio" id="radio3" name="radio" value="radio3"/>
+        <input type="radio" id="radio4" name="radio" value="radio4"/>
+        <br>
+
+        <!-- select -->
+        <select name="select">
+            <option value="baruch">ברוך</option>
+            <option value="shvartz"> ijlfdkjskljlskjcשוורץ</option>
+            <option value="2">2ברוך</option>
+            <option selected value="3">3ברוך</option>
+            <option selected value="4">4ברוך</option>
+            <option value="5">5ברוך</option>
+        </select>
+        <br>
+
+        <!-- אזור טקס -->
+        <textarea>fsdffsfsdfs</textarea>
+        <br>
+
+        <label for="file">קובץ</label>
+        <input type="file" id="file" name="file"/>
+        <br>
+
+        <br>
+        <input type="submit" value="שלח"/>
+        <button type="submit">מסור</button>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <hr>
+    <h2>טבלאות</h2>
+    <table style="display: none;">
+        <thead>
+           <tr>
+               <th>
+                   <p>dkslfjldjflkdjfkljdklfjldjml</p>
+                   כותרת אנכית
+                </th>
+               <th>column 1</th>
+               <th>column 2</th>
+               <th>column 3</th>
+               <th>column 4</th>
+           </tr>             
+        </thead>
+        <tbody>
+           <tr>
+               <td>
+                <div>dhishjdsha</div>
+                   כותרת מאוזנת
+                </td>
+               <td>column 1</td>
+               <td>column 2</td>
+               <td>column 3</td>
+               <td>column 4</td>
+           </tr>     
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                 <div>dhishjdsha</div>
+                    כותרת מאוזנת
+                 </td>
+                <td>column 1</td>
+                <td>column 2</td>
+                <td>column 3</td>
+                <td>column 4</td>
+            </tr> 
+        </tfoot>
+    </table>
+</div>
+
+<form action="path_to_submit_form" method="GET" style="display: none;">
+
+    <!-- קלט מסוג טקסט -->
+    <!-- הקלט מחוץ לתוית -->
+    <label for="text-input">Text input</label>
+    <input type="text" name="text_input" id="text-input">
+
+    <!-- קלט מסוג מספר -->
+    <!-- הקלט בתוך התווית -->
+    <label>
+        <input type="number" name="number_input">
+    </label>
+
+    <!-- קלט מסוג אימייל -->
+    <input type="email" name="email_input">
+
+    <!-- קלט מסוג סיסמא -->
+    <input type="password" name="password_input">
+
+    <!-- קלט מסוג תאריך -->
+    <input type="date" name="date_input">
+
+    <!-- קלט מסוג שעה -->
+    <input type="time" name="time_input">
+
+    <!-- קלט מסוג קובץ -->
+    <input type="file" name="file_input">
+
+    <!-- נעים להכיר עוד סוגים -->
+        <!-- קלט מסוג צבע -->
+        <input type="color" name="color_input">
+
+        <!-- קלט מסוג סליידר/מחוון -->
+        <input type="range" name="range_input">
+
+    <!-- קלט מסוג צ'קבוקס -->
+    <input type="checkbox" name="checkbox_input" value="check1">
+    <input type="checkbox" name="checkbox_input" value="check2">
+    <input type="checkbox" name="checkbox_input" value="check3">
+    <input type="checkbox" name="checkbox_input" value="check4">
+
+    <!-- קלט מסוג רדיו -->
+    <input type="radio" name="radio_input" value="radio1">
+    <input type="radio" name="radio_input" value="radio2">
+    <input type="radio" name="radio_input" value="radio3">
+
+
+    <!-- קלט מסוג בחירה -->
+    <select name="select_input">
+        <option value="value1" selected>Value 1</option>
+        <option value="value2" selected>Value 2</option>
+        <option value="value3" selected>Value 3</option>
+        <option value="value4" selected>Value 4</option>
+    </select>
+
+    <!-- קלט מסוג בחירה עם בחירה מרובה -->
+    <select name="multiple_select_input" multiple>
+        <option value="value1" selected>Value 1</option>
+        <option value="value2" selected>Value 2</option>
+        <option value="value3" selected>Value 3</option>
+        <option value="value4" selected>Value 4</option>
+    </select>
+
+    <!-- אזור טקסט -->
+    <textarea name="textarea_input"></textarea>
+
+    <!-- אזור טקסט עם ערך ברירת מחדל -->
+    <textarea name="textarea_input">זה טקסט ברירת מחדל, יפה נכון</textarea>
+
+    <!-- כפתור עם input -->
+    <input type="submit" value="שלח">
+
+    <!-- כפתור עם button -->
+    <button type="submit">שלח</button>
+
+
+
+</form>
+
+<div style="display: none;">
+    <ol>
+        <li>ברוך</li>
+        <li>שוורץ</li>
+        <li>שמחה</li>
+    </ol>
+    
+    <ul>
+        <li>ברוך</li>
+        <li>שוורץ</li>
+        <li>שמחה</li>
+    </ul>
+</div>
+
+
+</body>
+</html>

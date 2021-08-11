@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    padding: 0px;
+    margin: 0;
+}
+
+nav{
+    background-color:  rgb(9, 5, 59);
+}
+
+nav ul{
+    margin: 0;
+}
+
+nav li{
+    display: inline-block;
+    list-style: none;
+}
+
+nav li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+nav li a:hover{
+    background: rgba(255,255,255, 0.2);
+}
+
+nav li a.active{
+    background: #fff;
+    color: #000;
+}
+
+main{
+    max-width: 1200px;
+    padding: 0px 20px;
+    margin: auto;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css in file</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+            direction: rtl;
+        }
+
+        p{
+            color: hotpink;
+        }
+
+        div *{
+            color: purple;
+        }
+
+        div>p{
+            color: peru;
+        }
+
+        div i{
+            font-size: 100px;
+        }
+
+        /* #div1{
+            background-color: red;
+        } */
+        .divs{
+            background-color: antiquewhite
+        }
+        .divs2{
+            border: 1px solid #563856;
+        }
+
+        [type]:not(input[type=password]){
+            background-color: burlywood;
+        }
+
+        label{
+            margin-top: 20px;
+            display: block;
+        }
+
+        .input-text{
+            width: 250px;
+            border: 1px solid #d5d5d5;
+            border-radius: 4px;
+            box-shadow: 0px 0px 10px 0px rgba(207, 1, 1, 0.2);
+            padding: 4px 8px;
+            display: block;
+        }
+
+        .input-text:focus{
+            outline: none ;
+            border-color: aqua;
+        }
+
+        .input-text:hover{
+            height: 250px;
+            width: 300px;
+            background-color: black;
+        }
+
+        .color-input{
+            padding: 0px;
+        }
+    </style>
+
+</head>
+    <div id="div1" class="divs" data-width="baruch">
+        <p>ברוך</p>
+        <p>
+            שמחה 
+            <span>
+               חיים
+               <b> משה
+                <i> ישראל</i>
+                </b>
+        </span>
+    </p>
+        
+    </div>
+    <div class="divs">.</div>
+    <div class="divs2 divs">.</div>
+    <div class="divs2 divs">.</div>
+    <div class="divs2 divs">.</div>
+    <div class="divs2">.</div>
+    <div class="divs2">.</div>
+
+    <label>
+        שם מלא
+        <input type="text" class="input-text"/>
+    </label>
+    <label>
+         גיל
+        <input type="number" class="input-text"/>
+    </label>
+    <label>
+        אימייל
+        <input type="email" class="input-text"/>
+    </label>
+    <label>
+        תאריך לידה
+        <input type="date" class="input-text"/>
+    </label>
+    <label>
+        הצבע שאתה הכי לא אוהב
+        <input type="color" class="input-text color-input"/>
+    </label>
+
+    <input type="range" min="100" max="300" class="input-text">
+    
+    <select class="input-text select">
+        <option value="1">אחד</option>
+        <option value="2">שתיים</option>
+        <option value="3">שלוש</option>
+    </select>
+    <p>שוורץ</p>
+    <p>חמניצקי</p>
+</body>
+</html>
