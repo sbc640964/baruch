@@ -39,7 +39,12 @@ nav li a.active{
 }
 
 main{
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    /* comment */
     padding: 0px 20px;
     margin: auto;
+}
+
+img.img-main{
+    width: 200px;
 }
