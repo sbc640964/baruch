@@ -10,6 +10,7 @@ body{
 
 nav{
     background-color:  rgb(9, 5, 59);
+    box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.5);
 }
 
 nav ul{
@@ -50,18 +51,125 @@ main{
     height: 600px;
     background:rgb(230, 230, 230) no-repeat url("images/coding-man.jpg") center; 
     background-size: cover;
-    line-height: 600px;
-    text-align: center;
-    font-size: 60px;
+    border-bottom: 2px rgb(78, 77, 153) dotted;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    /* z-index: 1; */
+}
+
+.banner h1{
     color: rgba(255,255,255,0.6);
 }
 
 .banner h1{
     margin: 0px;
+    display: block;
+    font-size: 120px;
 }
 
-img.img-main{
-    height: 200px;
+.banner p{
+    margin-top: 8px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #09053B;
 }
+
+
+
+/* test in about page */
+.shadow{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(180, 45, 45);
+    margin: auto;
+    box-shadow: 5px 10px 20px -5px rgba(0,0,0,0.2);
+    border-radius: 10%;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    /* animation-delay: 5s; */
+    animation-fill-mode: both;
+    animation-play-state: paused;
+}
+
+.shadow:hover{
+    animation-play-state: running;
+}
+
+#warp{
+    height: 100vh;
+    width: 300px;
+    background-color: brown;
+    overflow: hidden;
+}
+
+#tickers{
+    color: white;
+    padding: 12px;
+    text-align:justify;
+    animation: ticker 30s linear infinite;
+    font-size: 22px;
+}
+
+
+@keyframes rotate{
+    from{
+        transform: rotate(10deg);
+    }
+
+    to{
+        transform: rotate(420deg);
+    }
+}
+
+@keyframes ticker {
+    from{
+       transform: translate(0, 100%);       
+    }
+
+    to{
+        transform: translate(0, -100%);
+    }
+}
+
+
+
+/* Flex Page */
+
+.flex-page main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgflex{
+  margin: 6px;
+  width: 150px;
+  height: 150px;
+  background-color: aquamarine;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+}
+
+.item-1{
+    order: 1;
+}
+
+.item-11{
+    order: 2;
+}
+
+
+
+
+
+
 
 
