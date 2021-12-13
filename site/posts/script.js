@@ -16,7 +16,24 @@ http.send();
 
 
 function createPage() { 
-  console.log(data[0].title)
+  const main = document.getElementById('posts');
+
+  let postsHtml = [];
+  
+  for(post of data){
+    postsHtml.push(createPostInArcive( post ))
+  }
+
+  main.innerHTML = postsHtml.join('');
+
+}
+
+
+function createPostInArcive(post) { 
+  return `<div class="post">
+    <h3>${post.title}</h3>
+    <p>${post.body}</p>
+  </div>`  
 }
 
 function search(search) { 
