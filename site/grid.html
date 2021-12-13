@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body class="grid-page">
+    <header>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="home.html"
+                >Home
+                </a>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="prices.html">Prices</a></li>
+            <li><a href="flex.html">Flex</a></li>
+            <li><a  class="active" href="grid.html">Grid</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main style="
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: 70px calc(100vh - 183px) 70px;
+    column-gap: px;
+    ">
+      <div class="imgflex" style="grid-column: span 2;">Header</div>
+      <div class="imgflex" style="border-radius: 400px 100px 300px 400px;">Sidebar</div>
+      <div class="imgflex">Main</div>
+      <div class="imgflex" style="grid-column: span 2;">Footer</div>
+    </main>
+  </body>
+</html>

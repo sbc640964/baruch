@@ -23,6 +23,22 @@
             <li><a href="prices.html">Prices</a></li>
             <li><a href="flex.html">Flex</a></li>
           </ul>
+          <div class="right-nav d-flex items-center">
+            <ul style="padding-right: 20px;">
+              <li><a class="active" href="#">Test</a></li>
+            </ul>
+            <form action="/" method="GET">
+              <div style="border: 1px solid #fff; border-radius: 6px; height: 36px; position: relative;">
+                <input name="s" type="search" class="reset-input search" style="color: #fff; width: 20px; height: 100%; padding-left: 25px;"/>
+                <input 
+                  type="submit" 
+                  value=""
+                  class="reset-input" 
+                  style="background: url('./images/search.svg') no-repeat; line-height: 0; width: 12px; height: 12px; color:#fff; position: absolute; top: 50%; left: 8px; transform: translate(0, -50%);"/>
+              </div>
+            </form>
+          </div>
+          
         </nav>
       </div>
     </header>
@@ -31,6 +47,71 @@
         <h1>My Site...</h1>
         <p>The first website on world</p>
       </div>
+      <!-- <div class="box">
+          <h2>Title</h2>
+          <span><a href="">Click me</a></span>
+      </div> -->
+
+      <div style="text-align: center; margin-top: 12px;">
+        <button id="btn-first">Click me</button>
+
+        <p id="counter">Counter: <span>0</span></p>
+      </div>
+
+
+      <div style="margin-top: 20px; display: flex; flex-flow: column; justify-content: center; align-items: center; font-size: 60px;"">
+        <div style="text-align: center;">
+          <div style="font-size: 36px; font-weight: bold; color:blueviolet">Clock</div>
+          <div id="clock">
+            <span>00</span>:<span>00</span>:<span>00</span>
+          </div>
+        </div>
+      </div>
+
+
+      <style>
+
+        .box *{
+          transition: transform 0.8s, opacity 1.5s;
+        }
+
+        .box{
+          padding: 20px;
+          background-color: antiquewhite;
+          display: inline-block;
+          overflow: hidden;
+        }
+        .box h2{
+          transform: translate(0, -100px);
+          opacity: 0;
+        }
+
+        .box span{
+          display: block;
+          transform: translate(0, 100px);
+          opacity: 0;
+        }
+
+        .box:hover h2, .box:hover span{
+          transform: translate(0, 0);
+          opacity: 1;
+        }
+        #btn-first:hover{
+          opacity: 0.8;
+        }
+        #btn-first{
+            cursor: pointer;
+            transition: 0.2s;
+            margin: auto;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 8px 28px;
+            font-size: 28px;
+            background-color: rgb(26, 26, 80);
+            color: #fff;
+            border-radius: 100px;
+        }
+      </style>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
