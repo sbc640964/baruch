@@ -100,3 +100,4 @@ function clock() {
 function stopClock() {
     clearInterval(clockInterval)
 }
+
